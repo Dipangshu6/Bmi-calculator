@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+<style src="style.css"></style>
+<body>
+    <h1>BMI Calculator</h1>
+        <form action="" method="get">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" required><br><br>
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" name="height" step="1" required><br><br>
+            <input type="submit" value="Calculate BMI">
+        </form>
+        <br>
+    <div id="result">Result will be displayed here</div> <br>
+    <span id = "after_result"></span>
+    <fieldset style="width: fit-content;">
+        <div id="weight_Guide"><h2>Weight Guide</h2></div>
+        <p>Underweight: BMI < 18.5</p>
+        <p>Normal weight: BMI 18.5 - 24.9</p>
+        <p>Overweight: BMI 25 - 29.9</p>
+        <p>Obesity: BMI ≥ 30</p>
+    </fieldset> 
+</body>
+<script src="calculate.js"></script>
+</html>
